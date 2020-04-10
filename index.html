@@ -4,16 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./src/assets/images/np_flag.png">
     <link rel="stylesheet" href="styles.css">
     <title>Learn Nepali</title>
 </head>
 
 <body>
-    <header class="main-header">
-        <h1 class="masthead">Learn Nepali</h1>
-    </header>
 
-    <script src="./src/index.js"></script>
+    <section class="app-wrapper">
+        <header class="main-header">
+            <h1 class="masthead"><img src="./src/assets/images/np.svg" alt="" class="logo"><a href="/"> <span>Learn
+                        Nepali</span></a></h1>
+            <nav id="main-nav">
+                <button class="main-link">Home</button>
+                <button class="main-link">Learn</button>
+                <button class="main-link">About</button>
+            </nav>
+        </header>
+        <main id="main-content">
+            <!-- Begin LANDING section -->
+            <article class="main-page" id="landing">
+                <section class="landing-content">
+                    <button id='start-button'>Start</button>
+                </section>
+            </article>
+            <!-- End LANDING section -->
+            <!-- Begin LESSON section  -->
+            <article class="main-page">
+                <div id="learning">
+                    <section id="lesson-navs">
+                        <h3 class="section-title">
+                            <span id='close-menu'>X</span> <span>Lessons</span> </h3>
+                        <section class="lesson-links">
+                            <h4 class="nav-title">Letters</h4>
+                            <button id="vowels" class="letter-links">Vowels</button id="">
+                            <button id="roots" class="letter-links">Roots</button>
+                            <button id="compounds" class="letter-links">Compounds</button>
+                            <button id="numbers" class="letter-links">Numbers</button>
+                        </section>
+                        <section class="lesson-links">
+                            <h4 class="nav-title">Words</h4>
+                            <button id="nouns" class="word-links">Nouns</button>
+                            <button id="pronouns" class="word-links">Pronouns</button>
+                            <button id="verbs" class="word-links">Verbs</button>
+                            <button id="adjectives" class="word-links">Adjectives</button>
+                            <button id="adverbs" class="word-links">Adverbs</button>
+                            <button id="prepositions" class="word-links">Prepositions</button>
+                            <button id="conjunctions" class="word-links">Conjunctions</button>
+                            <button id="interjections" class="word-links">Interjections</button>
+                        </section>
+                        <section class="lesson-links">
+                            <h4 class="nav-title">Sentences</h4>
+                            <button id="present" class="sentence-links">Present</button>
+                            <button id="past" class="sentence-links">Past</button>
+                            <button id="future" class="sentence-links">Future</button>
+                        </section>
+                        <section class="lesson-links">
+                            <h4 class="nav-title">Readings</h4>
+                            <button id="beginner" class="reading-links">Beginner</button>
+                            <button id="intermediate" class="reading-links">Intermediate</button>
+                            <button id="advanced" class="reading-links">Advanced</button>
+                            <button id="native" class="reading-links">Native</button>
+                        </section>
+                    </section>
+                    <section class="lesson-container">
+                        <h2 class="section-title" id="lesson-page-title"> <span id="lesson-menu">&#9776;</span>
+                            <span>Learn</span></h2>
+                        <div id="lesson-box-container">
+                            <section id="lesson-box"></section>
+                            <button id="prev-btn">&lang; Prev</button>
+                            <button id="next-btn">Next &rang;</button>
+                        </div>
+                    </section>
+                </div>
+            </article>
+            <!-- End LESSON Section -->
+            <!-- Begin ABOUT section -->
+            <article class="main-page" id="about">
+
+                <h2 class="page-title" id="about-page-title"> <span id="about-menu">&#9776;</span> <span>About
+                        Nepali Language</span></h2>
+                <div id="about-content">
+                    <nav id="about-nav"></nav>
+                    <section id="about-box">
+                        <section id="about-post"></section>
+                        <button id="about-prev-btn">&lang; Prev</button>
+                        <button id="about-next-btn">Next &rang;</button>
+                    </section>
+                </div>
+            </article>
+            <!-- End ABOUT section -->
+        </main>
+        <footer>
+            <p>&copy;Anil Bhattarai 2020 - <span id="copy-right-year"></span></p>
+        </footer>
+    </section>
+
+    <script src="./src/index.js" type="module"></script>
 </body>
 
 </html>

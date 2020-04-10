@@ -4,9 +4,359 @@
 *{
     padding: 0;
     margin: 0;
+    --theme-blue: darkblue;
+    --theme-crimson: crimson;
 }
 body{
-    width: 100;
+    font-family: Arial;
+    width: 100%;
     max-width: 1200px;
     margin: auto;
+    background: var(--theme-blue);
+}
+a{
+    text-decoration: none;
+    color: unset;
+}
+button{
+    all: unset;
+    cursor: pointer;
+}
+.app-wrapper{
+    position: relative;
+    box-shadow: 0 0 0 1px rgb(4, 4, 212);
+    padding: 8px;
+    /* height: 100vh; */
+}
+.main-header{
+    position: relative;
+    height: 80px;
+    /* background: lightgray; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+}
+.masthead{
+    color: white;
+    font-weight: 400;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 32px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    letter-spacing: 4px;
+    word-spacing: 8px;
+}
+.masthead >a{
+    color: rgb(250, 245, 245);
+    transition: 250ms all ease-in-out;
+}
+.logo{
+    height: 50px;
+    padding: 8px;
+    margin: 8px;
+    /* width: 60px; */
+    box-shadow: 0 0 0 1px gray;
+    border-radius: 4px;
+}
+.main-nav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.main-link{
+    padding: 4px 8px;
+    cursor: pointer;
+    color: white;
+    letter-spacing: 1px;
+}
+.main-link:hover, .main-link.active{
+    color: yellow;
+}
+
+#main-content{
+    padding-bottom: 20px;
+}
+.main-page{
+    background: white;
+    margin: 4px;
+    height: 100%;
+}
+#landing{
+    background: var(--theme-blue);
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: auto;
+    height: calc(100vh - 200px);
+}
+.landing-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    height: 100%;
+    /* overflow: scroll; */
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+#start-button{
+    color: yellow;
+    box-shadow: 0 0 0 2px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    height: 150px;
+    width: 290px;
+    font-size: 5rem;
+    transition: 300ms all ease-in-out;
+    text-align: center;
+    letter-spacing: 10px;
+}
+#start-button::after{
+    content:"A new language, a whole new world";
+    display: block;
+    font-size: 11px;
+    color: white;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-style: italic;
+
+}
+#start-button:hover{
+    box-shadow: 0 0 0 2px blue;
+    color: white;
+}
+.page-title{
+    text-align: center;
+}
+#learning{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 8px;
+
+}
+#lesson-page-title{
+    text-align: center;
+}
+#lesson-navs{
+    padding: 8px;
+    text-align: right;
+    box-shadow: 1px 0 0 0 gray;
+}
+.lesson-links{
+    display: flex;
+    flex-direction: column;
+}
+.lesson-links > button{
+    padding: 4px 0;
+}
+#lesson-box-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+    margin: auto;
+    /* background: var(--theme-blue); */
+}
+#prev-btn, #next-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--theme-blue);
+    color: white;
+    font-size: 18px;
+    padding: 2px;
+}
+#prev-btn{
+    left: 8px;
+}
+#next-btn{
+    right: 8px;
+}
+#lesson-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 98%;
+    min-width: 300px;
+    /* background: white; */
+    margin: 0 16px;
+}
+#lesson-menu, #close-menu, #about-menu{
+    display: none;
+}
+/* Styles for lesson Box template */
+
+.lesson-template, .nepali{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lesson-template{
+    background:var(--theme-blue);
+    width: 90%;
+    height: 90%;
+    min-height: 290px;
+    min-width: 290px;
+}
+.nepali{
+    color: white;
+    width: 80%;
+    height: 70%;
+    min-height: 150px;
+    min-width: 150px;
+    font-size: 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 11px;
+    text-align: center;
+    box-shadow: 0 0 0 1px white;
+    text-shadow: 3px 3px rgb(184, 155, 155);
+}
+.english, .sound, .picture, .lesson-title{
+    position: absolute;
+    color: white;
+
+}
+.english{
+    top: 2px;
+    left: 2px;
+}
+.sound{
+    bottom: 2px;
+    right: 2px;
+}
+.picture{
+    top: 2px;
+    right: 2px;
+}
+.lesson-title{
+    top: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: capitalize;
+    padding: 8px 0;
+    font-weight: 200;
+    letter-spacing: 6px;
+    color: yellow;
+}
+/* About Section Styles */
+
+#about-content{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-column-gap: 8px;
+}
+#about-nav{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 8px;
+    box-shadow: 1px 0 0 0 lightgray;
+    height: 800px;
+}
+.about-link{
+    padding: 8px 0;
+}
+#about-box{
+    position: relative;
+    width: 95%;
+}
+#about-post{
+    position: relative;
+    height: 800px;
+    width: 98%;
+    margin: 20px auto;
+    box-shadow: 0 0 0 1px lightgray;
+}
+#about-post-template{
+    width: 100%;
+    margin: 0 20px 0 auto;
+    padding: 8px;
+    
+}
+#about-prev-btn, #about-next-btn{
+    background: var(--theme-blue);
+    color: white;
+    padding: 4px 2px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#about-prev-btn{
+    left: 0;
+}
+#about-next-btn{
+    right: 0;
+}
+
+@media (max-width: 550px){
+    .masthead{
+        flex-basis: 100px;
+        
+    }
+    .masthead>a{
+      transform: scale(0);
+    }
+    #learning, #about-content{
+        grid-template-columns: 1fr;
+    }
+    #lesson-navs, #about-nav{
+        position: absolute;
+        transform: translateX(-250px);
+        transition: 250ms all ease-in-out;
+        width: 150px;
+    }
+    #lesson-navs.show, #about-nav.show{
+        transform: translateX(0);
+        background: lightgray;
+        z-index: 20;
+    }
+    #lesson-page-title, #about-page-title{
+        position: relative;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 5px;
+    }
+    #lesson-menu, #close-menu, #about-menu{
+        display: inline;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        box-shadow: 0 0 0 1px white;
+        padding: 1px;
+        cursor: pointer;
+        color:var(--theme-blue);
+        
+    }
+    /* #close-menu{
+        z-index: 23;
+    } */
+}
+
+footer{
+    
+    padding: 8px 0;
+    width: 100%;
+    text-align: center;
+    color: rgba(211, 211, 211, 0.555);
+    font-size: 14px;
 }

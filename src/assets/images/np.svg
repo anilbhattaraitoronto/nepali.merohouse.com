@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="480"
+   width="616"
+   inkscape:version="1.0beta2 (2b71d25, 2019-12-03)"
+   inkscape:export-ydpi="130"
+   inkscape:export-xdpi="130"
+   inkscape:export-filename="/Users/anilbhattarai/projects/resources/logos/np_flag.png"
+   sodipodi:docname="np.svg"
+   version="1.1"
+   viewBox="0 0 616 480"
+   id="flag-icon-css-np">
+  <metadata
+     id="metadata907">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:current-layer="flag-icon-css-np"
+     inkscape:window-maximized="0"
+     inkscape:window-y="23"
+     inkscape:window-x="0"
+     inkscape:cy="153.96874"
+     inkscape:cx="320"
+     inkscape:zoom="1.3312139"
+     showgrid="false"
+     id="namedview905"
+     inkscape:window-height="846"
+     inkscape:window-width="1621"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     inkscape:document-rotation="0"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <defs
+     id="defs892">
+    <clipPath
+       id="a">
+      <path
+         inkscape:connector-curvature="0"
+         id="path889"
+         d="M 0,-16 H 512 V 496 H 0 Z"
+         fill-opacity=".7" />
+    </clipPath>
+  </defs>
+  <path
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;fill-opacity:0;stroke-width:0.785723"
+     id="path894"
+     d="M 0,0 H 395.11073 V 480 H 0 Z"
+     fill="#fff" />
+  <g
+     inkscape:export-ydpi="130"
+     inkscape:export-xdpi="130"
+     id="g902"
+     transform="matrix(0.9375,0,0,0.9375,0,15)"
+     clip-path="url(#a)">
+    <g
+       id="g900"
+       fill-rule="evenodd">
+      <path
+         inkscape:connector-curvature="0"
+         id="path896"
+         d="M 6.5,489.5 H 385.3 L 137.4,238.1 394.7,238.4 6.6,-9.5 v 499 z"
+         stroke-width="13.8"
+         stroke="#000063"
+         fill="#ce0000" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path898"
+         d="m 180.7,355.8 -27,9 21.2,19.8 -28.5,-1.8 11.7,26.2 -25.5,-12.3 0.5,28.6 -18.8,-20.9 -10.7,26.6 -9.2,-26.3 -20.3,20.6 1.8,-27.7 -26.9,11.4 12.6,-25 -29.3,0.6 21.5,-18.3 -27.3,-10.5 27,-9 -21.3,-19.8 28.4,1.8 -11.6,-26.2 25.6,12.3 -0.5,-28.6 18.8,20.9 10.7,-26.6 9.1,26.3 20.4,-20.6 -1.9,27.7 27,-11.4 -12.7,25 29.4,-0.6 -21.5,18.3 z m -32.4,-184.7 -11.3,8.4 5.6,4.6 a 93.8,93.8 0 0 0 30.7,-36 c 1.8,21.3 -17.7,69 -68.7,69.5 A 70.6,70.6 0 0 1 33.1,147.3 c 10,18.2 16.2,27 32,36.5 l 4.7,-4.4 -10.6,-8.9 13.7,-3.6 -7.4,-12.4 14.4,1 -1.8,-14.4 12.6,7.4 4,-13.5 9,10.8 8.5,-10.3 4.6,14 11.8,-8.2 -1.5,14.3 14.2,-1.7 -6.7,13.2 z"
+         fill="#fff" />
+    </g>
+  </g>
+</svg>
