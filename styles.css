@@ -346,6 +346,7 @@ button{
         justify-content: end;
         align-items: center;
         padding: 5px;
+        text-align: right;
     }
     #lesson-menu, #close-menu, #about-menu{
         display: inline;
